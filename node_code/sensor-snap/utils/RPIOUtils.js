@@ -22,19 +22,21 @@ function PinHandle(pinNum , direction){
     this.direction = direction;
     rpio.open(pinNum , direction , rpio.LOW);
 
-    this.prototype.read = function(){
-        console.log("reading data from pinNum--"+this.pinNum)
-        return rpio.read(this.pinNum);
-    }
-
-    this.prototype.write = function(value){
-        console.log("reading value---"+value+" to pinNum--"+this.pinNum)
-        rpio.write(this.pinNum , value);
-    }
-
-    this.prototype.poll = function(callback , eventName){
-        rpio.poll(this.pinNum , callback,eventName);
-    }
-
 }
+
+PinHandle.prototype.read = function() {
+    console.log("reading data from pinNum--" + this.pinNum)
+    return rpio.read(this.pinNum);
+}
+
+
+PinHandle.prototype.write = function(value){
+    console.log("reading value---"+value+" to pinNum--"+this.pinNum)
+    rpio.write(this.pinNum , value);
+}
+
+PinHandle.prototype.poll = function(callback , eventName){
+    rpio.poll(this.pinNum , callback,eventName);
+}
+
 
