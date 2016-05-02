@@ -1,3 +1,4 @@
+//used  D Sun Hc-Sr501 sensor
 var gpio = require("gpio");
 
 var sensorOutput  = gpio.export(17, {

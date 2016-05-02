@@ -1,3 +1,4 @@
+// used DHT11 sensor
 var sensorLib = require('node-dht-sensor');
 
 var sensor = {
