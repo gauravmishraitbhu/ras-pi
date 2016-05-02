@@ -8,7 +8,7 @@ module.exports = {
 
     init: function(){
         RPIOUtils.initModule();
-        irSensorPin = RPIOUtils.getPinHandle(27,rpio.INPUT);
+        irSensorPin = RPIOUtils.getPinHandle(17,rpio.INPUT);
         irSensorPin.poll(motionDetected, rpio.POLL_HIGH);
     }
 }
