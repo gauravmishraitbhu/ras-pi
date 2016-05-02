@@ -32,6 +32,9 @@ app.use(function(req, res, next) {
   next(err);
 });
 
+var GPIOController = require('./controllers/GPIOController');
+GPIOController.init();
+
 // error handlers
 
 // development error handler
