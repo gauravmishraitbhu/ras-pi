@@ -1,0 +1,6 @@
+var gpio = require("gpio");
+var gpio10 = gpio.export(, {
+   direction: "in",
+   ready: function() {
+   }
+}); 
