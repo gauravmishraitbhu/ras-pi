@@ -1,6 +1,6 @@
 var RPIOUtils = require('./../utils/RPIOUtils');
 var rpio = require('rpio');
-var CameraController = require('CameraController')
+var CameraController = require('./CameraController')
 var path = require('path')
 var irSensorPin;
 
